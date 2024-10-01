@@ -39,4 +39,7 @@ combo_df$ISO <- countrycode(combo_df$Country,
 combo_dfISO <- subset(combo_df, select = -Country)
 combo_dfISO
 
+#save dataframe as .csv
+write.csv(combo_dfISO, "world_bank_mort.csv")
+
 
